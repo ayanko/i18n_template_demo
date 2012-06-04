@@ -20,6 +20,7 @@ class Application < Sinatra::Base
 
     @template = document.source
     @phrases = document.keys.uniq.join("\n")
+    @error = document.errors.join(", ")
 
     erb :index
   end

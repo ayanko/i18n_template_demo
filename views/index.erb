@@ -44,6 +44,10 @@
 
     <div class="container">
 
+      <% unless @error.empty? %>
+        <div class="alert alert-error"><%=h @error %></div>
+      <% end %>
+
       <div class="row">
         <div class="span8">
           <h3>Source Template:</h3>
