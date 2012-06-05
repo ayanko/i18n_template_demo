@@ -30,6 +30,7 @@ class Application < Sinatra::Base
 <body>
   <h2>Hello World</h2>
   <%= link_to "Home", home_path %>
+  <div data-i18n="i">Release</div>
 </body>
     DATA
   end
